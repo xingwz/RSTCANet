@@ -13,3 +13,7 @@ Extensive experiments demonstrate that RSTCANet outperforms state-of-the-art ima
 ## Network Architecture
 
 <img src = ""> 
+
+__The architecture of our proposed residual Swin Transformer Channel Attention network (RSTCANet). The network consists of three modules: the shallow feature extraction, the deep feature extraction, and the image reconstruction modules. The shallow feature extraction module is composed of a pixel shuffle layer and a vanilla linear embedding layer. For deep feature extraction, we propose residual Swin Transformer Channel Attention blocks (RSTCAB) to extract both hierarchical window based self-attention-aware features and vertical channel-attention-aware features. This module consists of K RSTCAB and one 3x3 convolutional layer. The shallow and deep features are first aggregated by a long skip connection before they fed into the image reconstruction module. The image reconstruction consists of the up-sampling layer and two 3x3 convolutional layers.__ 
+
+__There are N Swin Transformer layers (STL) and N/2 channel attention blocks (CA), and one 3x3 convolutional layer in our proposed residual Swin Transformer Channel Attention block (RSTCAB). There is also a skip connection in the RSTCAB, guaranteeing that the RSTCAB will focus on the differences between the input and output images. For each two successive STL, the channel attention block generates the channel statistics with the input of two STLs and multiplies the produced attention with the output of two STLs. The N channel attention blocks in the same RSTCAB share parameters.__
