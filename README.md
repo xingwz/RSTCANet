@@ -33,5 +33,25 @@ __The parameter settings of different model variants. C is the channel number. K
 
 2. Test:
     ```bash
-    python main_test_dm.py --model_name scunet_color_real_psnr --testset_name real3
+    python main_test_dm.py --model_name RSTCANet_B --testset_name urban100 --nc 72 --num_head 6 --N 6 --K 2
     ```
+    ```bash
+    python main_test_dm.py --model_name RSTCANet_S --testset_name urban100 --nc 96 --num_head 6 --N 6 --K 4
+    ```
+    ```bash
+    python main_test_dm.py --model_name RSTCANet_L --testset_name urban100 --nc 128 --num_head 8 --N 8 --K 4
+    ```
+
+## Results on Image Demosaicing
+
+<img src = "figs/compare_table.png">
+
+## Resulting Images
+
+__Visual results comparison of different demosaicing methods. (a) Ground-truth and selected area; (b) Ground-truth; (c) Mosaiced; (d) IRCNN; (e) RSTCANet-B; (f) DRUNet; (g) RSTCANet-S; (h) RNAN; (i) RSTCANet-L.__
+
+<img src = "figs/urban.png">
+
+<img src = "figs/McM1.png">
+
+<img src = "figs/McM5.png">
