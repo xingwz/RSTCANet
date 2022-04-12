@@ -62,15 +62,15 @@ def main():
     parser.add_argument('--nc', type=int, default=72, help='channel number')
     parser.add_argument('--window_size', type=int, default=8, help='window size of Swin Transformer')
     parser.add_argument('--num_heads', type=int, default=6, help='window size of Swin Transformer')
-    parser.add_argument('--K', type=int, default=6, help='number of STLs in one RSTCAB')
-    parser.add_argument('--N', type=int, default=2, help='number of RSTCAB')
+    parser.add_argument('--N', type=int, default=6, help='number of STLs in one RSTCAB')
+    parser.add_argument('--K', type=int, default=2, help='number of RSTCAB')
     parser.add_argument('--patch_size', type=int, default=2, help='patch size for patch partition')
     parser.add_argument('--sf', type=int, default=0, help='scale factor')
     
     args = parser.parse_args()
 
-    num_heads=[args.num_heads for i in range(args.N)]
-    depths = [args.K for i in range(args.N)]
+    num_heads=[args.num_heads for i in range(args.K)]
+    depths = [args.N for i in range(args.K)]
     
     sf = args.sf
     
