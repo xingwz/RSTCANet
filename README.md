@@ -23,3 +23,15 @@ __There are N Swin Transformer layers (STL) and N/2 channel attention blocks (CA
 <img src = "figs/ModelVariants.png"> 
 
 __The parameter settings of different model variants. C is the channel number. K and N denote the number of RSTCAB and the number of STL in one RSTCAB, respectively.__
+
+## Code
+
+1. Pretrained Models:
+    1. [RSTCANet_B.pth](dm_model_zoo/RSTCANet_B.pth) (5.5 MB)
+    2. [RSTCANet_S.pth](dm_model_zoo/RSTCANet_S.pth) (16.0 MB)
+    3. [RSTCANet_L.pth](dm_model_zoo/RSTCANet_L.pth) (32.6 MB)
+
+2. Test:
+    ```bash
+    python main_test_dm.py --model_name scunet_color_real_psnr --testset_name real3
+    ```
