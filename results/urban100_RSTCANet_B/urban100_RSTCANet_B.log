@@ -1,0 +1,5 @@
+22-04-12 17:13:01.445 : Model path: dm_model_zoo/RSTCANet_B.pth
+22-04-12 17:13:01.447 : model_name:RSTCANet_B
+22-04-12 17:13:01.447 : testset/urban100
+22-04-12 17:13:02.715 : img026.jpg - PSNR: 33.62 dB; SSIM: 0.9384.
+22-04-12 17:13:02.752 : Average PSNR/SSIM(RGB) - urban100_RSTCANet_B - PSNR: 33.62 dB; SSIM: 0.9384
