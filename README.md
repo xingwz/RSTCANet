@@ -1,5 +1,5 @@
 # RSTCANet
-Residual Swin Transformer Channel Attention Network for Image Demosaicing
+[Residual Swin Transformer Channel Attention Network for Image Demosaicing](http://arxiv.org/abs/2204.07098)
 
 [Wenzhu Xing](https://scholar.google.com/citations?user=KvzPRbMAAAAJ&hl=en&oi=ao), [Karen Egiazarian](https://scholar.google.com/citations?user=PzvGG50AAAAJ&hl=en)
 
