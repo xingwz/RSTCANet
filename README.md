@@ -55,3 +55,7 @@ __Visual results comparison of different demosaicing methods. (a) Ground-truth a
 <img src = "figs/McM1.png">
 
 <img src = "figs/McM5.png">
+
+## Acknowledgement
+
+This code borrows heavily from [SwinIR](https://github.com/JingyunLiang/SwinIR) and [SwinTransformer](https://github.com/microsoft/Swin-Transformer).
